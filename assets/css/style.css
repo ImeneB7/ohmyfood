@@ -1,17 +1,10 @@
-
-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
 .text-loc {
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
     background-color: lightgray;
 }
 
+.text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+}

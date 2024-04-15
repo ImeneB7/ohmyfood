@@ -8,25 +8,50 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
-    <header class="logo text">
+    <header class="text">
         <a href="index.html"><img src="assets/images/logo/ohmyfood@2x.svg" alt="Logo OhMyFood"></a>
-        
     </header>
+
     <main>
         <div>
-            <i class="fa-solid fa-location-dot"></i>
-            <span class="text-loc text">Paris, Belleville</span>
+            <span class="text-loc text"><i class="fa-solid fa-location-dot"></i>Paris, Belleville</span>
         </div>
+        <section class="intro">
+                <h2 class="title-intro text">Réservez le menu qui vous convient</h2>
+                <p class="txt-intro text">Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
+            <div class="text">
+                <button class="btn-resto shadow">Explorer nos restaurants</button>
+            </div>
+        </section>
         <section>
-            <h1 class="title-intro text">Réservez le menu qui vous convient</h1>
-            <p class="txt-intro text">Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
+            <h2>Fonctionnement</h2>
+            <div class="btn-container ">
+                <button class="choice-btn shadow">
+                    <i class="fa-solid fa-mobile-screen-button icon-fonct"></i>Choisissez un restaurant</button>
+                <button class="choice-btn shadow">
+                    <i class="fa-solid fa-list-ul icon-fonct"></i>Composez votre menu</button>
+                <button class="choice-btn shadow">
+                    <i class="fa-solid fa-store icon-fonct"></i>Dégustez au restaurant</button>
+            </div>
+        </section>
+        <section>
+            <h2>Restaurants</h2>
         </section>
     </main>
     <footer>
-
+        <div class="footer-bloc">
+            <img src="assets/images/logo/ohmyfood@2x.svg" alt="Logo OhMyFood" class="logo-footer">
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a></li>
+                <li><a href="#">Devenir partenaire</a></li>
+                <li><a href="#">Mentions légales</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>

@@ -106,7 +106,8 @@ body {
   left: -3px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .card-container .card-resto {
   display: grid;
@@ -139,6 +140,4 @@ footer a {
 }
 footer .info {
   gap: 20px;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

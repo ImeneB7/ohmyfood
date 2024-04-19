@@ -59,19 +59,14 @@ header {
   border: none;
   border-radius: 25px;
   color: white;
-  background: linear-gradient(357deg, #936ADC 0%, #FF79DA 100%);
+  background: linear-gradient(357deg, #9356DC 0%, #FF79DA 100%);
   width: 218px;
   height: 50px;
   font-size: 16px;
+  transition: all 0.2 ease-in-out;
 }
 .btn-resto:hover {
   opacity: 0.85;
-  transition: all 0.2 ease-in-out;
-}
-
-.btn-container {
-  display: grid;
-  gap: 20px;
 }
 
 .fonct {
@@ -81,12 +76,11 @@ header {
   width: 100%;
   height: 420px;
 }
-
-.title-h2 {
-  margin-left: 15px;
+.fonct .btn-container {
+  display: grid;
+  gap: 20px;
 }
-
-.choice-btn {
+.fonct .choice-btn {
   display: grid;
   grid-template-columns: auto 1fr;
   border: none;
@@ -100,12 +94,24 @@ header {
   font-weight: bold;
   font-size: 16px;
 }
-
-.icon-fonct {
+.fonct .fa-solid {
+  opacity: 0.8;
+}
+.fonct .fa-solid:hover {
+  opacity: 1;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: #9356DC;
+}
+.fonct .icon-fonct {
   justify-self: center;
   margin-right: -90px;
   font-size: 20px;
   color: #7e7e7e;
+}
+
+.title-h2 {
+  margin-left: 15px;
 }
 
 .card-container {
@@ -136,7 +142,7 @@ header {
   background-clip: text;
   -webkit-background-clip: text;
   transition: all 0.4s ease-in-out;
-  background-image: linear-gradient(357deg, #936ADC 0%, #FF79DA 100%);
+  background-image: linear-gradient(357deg, #9356DC 0%, #FF79DA 100%);
 }
 .card-container .card {
   background-color: white;

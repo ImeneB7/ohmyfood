@@ -16,9 +16,13 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  padding-top: 15px;
+  padding-top: 18px;
   width: 100%;
   background-color: #ffffff;
+}
+header a img {
+  width: 150px;
+  margin-bottom: 20px;
 }
 
 .icon-loc {
@@ -125,6 +129,16 @@ header {
   line-height: 0px;
   font-size: 18px;
 }
+.card-container .__new {
+  background-color: #99E2D0;
+  padding: 0.5rem;
+  border-radius: 0.125rem;
+  position: absolute;
+  top: 1rem;
+  right: 0.75rem;
+  font-size: 14px;
+  color: #008766;
+}
 .card-container i {
   position: absolute;
   margin-top: 165px;
@@ -213,4 +227,175 @@ footer a {
 }
 footer .info {
   gap: 20px;
+}
+
+/***** MEDIA QUERIES ******/
+@media (min-width: 768px) {
+  body {
+    margin: 0;
+  }
+  .break-word {
+    display: none;
+  }
+  header a img {
+    width: 200px;
+    height: 35px;
+  }
+  .text-loc {
+    margin-top: 80px;
+    padding: 12px;
+  }
+  .intro {
+    padding-top: 50px;
+  }
+  .intro .title-intro {
+    font-size: 40px;
+  }
+  .fonct {
+    height: 225px;
+  }
+  .btn-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    padding-left: 30px;
+    padding-right: 125px;
+  }
+  .btn-container .choice-btn {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: none;
+    width: 220px;
+    height: 75px;
+    border-radius: 20px;
+    opacity: 0px;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+  .btn-container .icon-fonct {
+    margin-left: -90px;
+  }
+  .title-h2 {
+    margin-left: 90px;
+    margin-bottom: 35px;
+  }
+  .card-resto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 91%;
+    padding-left: 80px;
+  }
+}
+@media (min-width: 1024px) {
+  body {
+    margin: 0;
+    width: 100%;
+  }
+  .break-word {
+    display: none;
+  }
+  header a img {
+    width: 200px;
+    height: 35px;
+  }
+  .text-loc {
+    margin-top: 80px;
+    padding: 12px;
+  }
+  .intro {
+    padding-top: 50px;
+  }
+  .intro .title-intro {
+    font-size: 40px;
+  }
+  .fonct {
+    height: 225px;
+  }
+  .btn-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    padding-left: 50px;
+    padding-right: 160px;
+  }
+  .btn-container .choice-btn {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: none;
+    width: 295px;
+    height: 75px;
+    border-radius: 20px;
+    opacity: 0px;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+  .btn-container .icon-fonct {
+    margin-left: -80px;
+  }
+  .title-h2 {
+    margin-left: 160px;
+    margin-bottom: 35px;
+  }
+  .card-resto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    padding-left: 150px;
+  }
+}
+@media (min-width: 1440px) {
+  body {
+    margin: 0;
+  }
+  .break-word {
+    display: none;
+  }
+  header a img {
+    width: 200px;
+    height: 35px;
+  }
+  .text-loc {
+    margin-top: 80px;
+    padding: 12px;
+  }
+  .intro {
+    padding-top: 50px;
+  }
+  .intro .title-intro {
+    font-size: 40px;
+  }
+  .fonct {
+    height: 225px;
+  }
+  .btn-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    padding-left: 130px;
+    padding-right: 120px;
+  }
+  .btn-container .choice-btn {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: none;
+    width: 315px;
+    height: 75px;
+    border-radius: 20px;
+    opacity: 0px;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+  .btn-container .icon-fonct {
+    margin-left: -80px;
+  }
+  .title-h2 {
+    margin-left: 160px;
+    margin-bottom: 35px;
+  }
+  .card-resto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    padding-left: 150px;
+  }
 }/*# sourceMappingURL=style.css.map */

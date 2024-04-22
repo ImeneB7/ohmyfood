@@ -52,7 +52,7 @@ header a img {
   padding-bottom: 10px;
 }
 
-.text {
+.center {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,14 +63,14 @@ header a img {
   border: none;
   border-radius: 25px;
   color: white;
-  background: linear-gradient(357deg, #9356DC 0%, #FF79DA 100%);
+  background: linear-gradient(360deg, #9356DC 0%, #FF79DA 100%);
   width: 218px;
   height: 50px;
   font-size: 16px;
-  transition: all 0.2 ease-in-out;
 }
 .btn-resto:hover {
   opacity: 0.85;
+  transition: all 0.2s ease-in-out;
 }
 
 .fonct {
@@ -112,6 +112,10 @@ header a img {
   margin-right: -90px;
   font-size: 20px;
   color: #7e7e7e;
+}
+.fonct .icon-fonct:hover {
+  color: #9356DC;
+  transition: 2ms;
 }
 
 .title-h2 {
@@ -156,7 +160,7 @@ header a img {
   background-clip: text;
   -webkit-background-clip: text;
   transition: all 0.4s ease-in-out;
-  background-image: linear-gradient(357deg, #9356DC 0%, #FF79DA 100%);
+  background-image: linear-gradient(360deg, #9356DC 0%, #FF79DA 100%);
 }
 .card-container .card {
   background-color: white;
@@ -229,7 +233,7 @@ footer .info {
   gap: 20px;
 }
 
-/***** MEDIA QUERIES ******/
+/***** MEDIA QUERIES ******/ /**** TABLETTE ****/
 @media (min-width: 768px) {
   body {
     margin: 0;
@@ -265,7 +269,7 @@ footer .info {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     border: none;
-    width: 220px;
+    width: 230px;
     height: 75px;
     border-radius: 20px;
     opacity: 0px;
@@ -286,7 +290,7 @@ footer .info {
     padding-left: 80px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1024px) { /**** DESKTOP ****/
   body {
     margin: 0;
     width: 100%;
@@ -315,14 +319,14 @@ footer .info {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
-    padding-left: 50px;
+    padding-left: 110px;
     padding-right: 160px;
   }
   .btn-container .choice-btn {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     border: none;
-    width: 295px;
+    width: 255px;
     height: 75px;
     border-radius: 20px;
     opacity: 0px;
@@ -333,14 +337,14 @@ footer .info {
     margin-left: -80px;
   }
   .title-h2 {
-    margin-left: 160px;
+    margin-left: 110px;
     margin-bottom: 35px;
   }
   .card-resto {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 90%;
-    padding-left: 150px;
+    padding-left: 100px;
   }
 }
 @media (min-width: 1440px) {
@@ -388,6 +392,19 @@ footer .info {
   .btn-container .icon-fonct {
     margin-left: -80px;
   }
+  .btn-resto {
+    border: none;
+    border-radius: 25px;
+    color: white;
+    background: linear-gradient(360deg, #9356DC 0%, #FF79DA 100%);
+    width: 218px;
+    height: 50px;
+    font-size: 16px;
+  }
+  .btn-resto:hover {
+    opacity: 0.85;
+    transition: all 0.2s ease-in-out;
+  }
   .title-h2 {
     margin-left: 160px;
     margin-bottom: 35px;
@@ -397,5 +414,17 @@ footer .info {
     grid-template-columns: 1fr 1fr;
     width: 90%;
     padding-left: 150px;
+  }
+  footer ul {
+    height: 70px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 50px;
+    margin-right: 330px;
+    margin-top: 30px;
+  }
+  footer .logo-footer {
+    margin-left: 90%;
+    margin-bottom: -51px;
   }
 }/*# sourceMappingURL=style.css.map */

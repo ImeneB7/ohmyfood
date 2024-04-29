@@ -270,6 +270,10 @@ header {
     animation: menu-list 3s ease both;
     animation-delay: 1.6s;
 }
+.menu-content:nth-child(5) {
+    animation: menu-list 3s ease both;
+    animation-delay: 1.9s;
+}
 
 @keyframes menu-list {              /** EFFET APPARITION MENU **/
 

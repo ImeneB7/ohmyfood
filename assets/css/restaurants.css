@@ -330,6 +330,10 @@ footer .info {
 }
 
 @media screen and (min-width: 768px) { /*** TABLETTE ***/
+  header .arrow {
+    position: absolute;
+    left: 15px;
+  }
   i {
     top: 4%;
     left: 500px;
@@ -379,17 +383,11 @@ footer .info {
   }
 }
 @media (min-width: 1440px) { /*** LARGE DESKTOP ***/
-  header {
+  header .arrow {
     position: absolute;
-    top: 0;
-    left: 0;
-    padding-top: 25px;
-    width: 100%;
-    background-color: #F6F6F6;
-  }
-  header a img {
-    width: 190px;
-    margin-bottom: 20px;
+    left: 15px;
+    top: 50px;
+    color: #353535;
   }
   .shadow {
     box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.2509803922);
@@ -409,20 +407,11 @@ footer .info {
   .title h1 {
     padding-top: 30px;
     display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-left: -30px;
-    font-size: 30px;
-    font-family: "shrikhand";
-    font-style: italic;
-    font-weight: 590;
   }
-  i {
+  .heart {
     position: absolute;
-    margin-right: 400px;
-    font-size: 28px;
-    top: 5%;
-    left: 610px;
+    left: 67%;
+    top: 4.8%;
   }
   .fa-solid {
     opacity: 0;
@@ -436,30 +425,19 @@ footer .info {
     background-image: linear-gradient(360deg, #9356DC 0%, #FF79DA 100%);
   }
   .bloc-menu {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding-left: 60px;
     margin-left: 15%;
     position: absolute;
     top: 465px;
     border-radius: 45px 35px 0 0;
     background-color: #F6F6F6;
     width: 70%;
-    height: 160%;
   }
-  .bloc-menu {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-  }
-  .menu-content {
-    border-radius: 15px;
-    background-color: #ffffff;
-    width: 600px;
-    height: 70px;
-    margin-left: 195px;
-    line-height: 8px;
-    padding-top: 1px;
-    padding-left: 15px;
-    margin-bottom: 12px;
+  .text__price {
+    margin-left: 150px;
   }
   footer {
     position: relative;

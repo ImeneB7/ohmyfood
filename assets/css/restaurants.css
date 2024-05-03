@@ -438,8 +438,8 @@ footer .info {
     margin-bottom: 100px;
   }
   footer {
-    position: relative;
-    top: 1200px;
+    position: absolute;
+    top: 205%;
     left: 0;
     background-color: #353535;
     width: 100%;

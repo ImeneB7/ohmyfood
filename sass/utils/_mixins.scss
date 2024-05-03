@@ -1,3 +1,10 @@
-@mixin button-styles {
-    border: none;
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@mixin shadow {
+    box-shadow: 0px 4px 14px 0px #00000040;
 }

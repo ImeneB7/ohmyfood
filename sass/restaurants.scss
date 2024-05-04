@@ -1,75 +1,6 @@
 @use "../sass/utils/variables" as vars;
 @use "../sass/utils/mixins" as mixins;
 
-.loader-content {
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    border-radius: 5px;
-    width: 100%;
-    height: 100%;
-    /*margin: 100px auto 0;*/ 
-    z-index: 10999;
-    animation: fadeOut 3s forwards;
-    
-    .loader {
-        display: block;
-        position: relative;
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        border: 7px solid transparent;
-        border-top-color: blueviolet;
-        animation: spin 2s linear infinite;
-        animation-delay: 20ms;
-    
-    &::before, &::after {
-        content: "";
-        position: absolute;
-        border-radius: 50%;
-        border: 7px solid transparent;
-    }
-    
-    &::before {
-        top: 10px;
-        left: 10px;
-        right: 10px;
-        bottom: 10px;
-        border-top-color: rgb(192, 108, 125);
-        animation: spin 3s linear infinite;
-    }
-    
-    &::after {
-        top: 25px;
-        left: 25px;
-        right: 25px;
-        bottom: 25px;
-        border-top-color: rgb(192, 108, 125);
-        animation: spin 1.5s linear infinite;
-    }
-}
-}
-
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes fadeOut {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-        visibility: hidden;
-    }
-}
 
 *  {
     font-family: 'Roboto', sans-serif;
@@ -129,7 +60,7 @@ header {
     font-family: 'shrikhand';
     font-style: italic;
     font-weight: 580;
-    margin-left: -15px;  /*** 45***/
+    margin-left: -30px;  
 }
 
 .heart {
@@ -137,19 +68,46 @@ header {
     font-size: 1.6rem;
     top: 3.2%;
     left: 82%;
-}
-
-.heart .fa-solid {
-    opacity: 0;
+    
+    .fa-solid  {
+        color: vars.$btn-background;
+        opacity: 0;
     &:hover {
         opacity: 1;
         color: transparent;
         background-clip: text;
-        transition: all 0.4s ease-in;
         background-image: vars.$btn-background;
+        animation: fadeInn 1s , fadeOutt 1s 2s;
     }
-}
+    
+    @keyframes fadeInn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
 
+    @keyframes fadeOutt {
+        0% {
+            opacity: 0.5;
+        }
+        
+        100% {
+            opacity: 0;
+        }   
+    }
+    
+}
+&:hover .fa-solid {
+    animation: fadeInn 1s;
+}
+&:not(:hover) .fa-solid {
+        animation: fadeOutt 1s backwards;
+    }  
+      
+}
 
 .subtitle {
     padding-top: 40px;
@@ -273,8 +231,6 @@ header {
 
 
 
-
-
 @keyframes menu-list {              /** EFFET APPARITION MENU **/
 
     0% {
@@ -304,7 +260,7 @@ header {
     border-radius: 25px;
     margin-top: 30px;
     margin-bottom: 120px;
-    margin-left: 0px;
+    
     color: white;
     background: vars.$btn-background;
     width: 218px;
@@ -314,6 +270,16 @@ header {
             opacity: 0.85;
             transition: all 0.2s ease-in-out;
         }
+}
+
+@-moz-document url-prefix() {
+    .menu {
+        margin-bottom: 70px;
+    }
+
+    .menu-content {
+        padding-top: -20px;
+    }
 }
 
 footer {
@@ -398,12 +364,26 @@ footer {
     .bloc-menu {
         width: 100%;
         top: 400px;
-        height: 160%;
-        padding-left: 35px;
+        height: 170%;
+        padding-left: 45px;
     }
 
     .text__price {
         margin-left: 85px;
+    }
+
+    .btn-resto {
+        margin-right: 20px;
+    }
+
+    @-moz-document url-prefix() {
+        .menu {
+            margin-bottom: 70px;
+        }
+
+        .menu-content {
+            padding-top: -20px;
+        }
     }
 
     footer {
@@ -420,17 +400,27 @@ footer {
         margin-left: 10px;
     }
 
-    .menu {
-        width: 70%;
-        padding-top: 15px;
-        margin-left: 115px;
-    }
-
+    
     .bloc-menu {
         width: 80%;
-        height: 170%;
+        height: 175%;
         margin-top: 50px;
         margin-left: 100px;
+            .menu {
+            width: 70%;
+            margin-left: 115px;
+            margin-top: -250px;
+        }
+    }
+
+    @-moz-document url-prefix() {
+        .menu {
+            margin-bottom: 70px;
+        }
+
+        .menu-content {
+            padding-top: -30px;
+        }
     }
 
     .text__price {
@@ -438,11 +428,11 @@ footer {
     }
 
     .btn-resto{
-        margin-bottom: 60px;
+        margin-bottom: 120px;
     }
 
     footer {
-        margin-top: 140px;
+        margin-top: 115px;
     }
 }
 
@@ -466,21 +456,10 @@ footer {
 
 .heart {
     position: absolute;
-    left: 62%;
+    left: 66%;
     top: 3.8%;
 }
 
-.fa-solid .heart {
-    opacity: 0;
-    &:hover {
-        opacity: 1;
-        color: transparent;
-        background-clip: text;
-        background-clip: text;
-        transition: all 0.4s ease-in-out;
-        background-image: vars.$btn-background;
-    }
-}
 
 .subtitle {
     font-size: 18px;
@@ -491,7 +470,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    padding-left: 0px;
+    padding-left: 90px;
     margin-left: 210px;
     position: absolute;
     top: 400px;
@@ -503,7 +482,7 @@ footer {
 
 .menu {
     position: relative;
-    top: 0px;
+    top: -50px;
     margin-left: 160px;
 }
 
@@ -513,13 +492,24 @@ footer {
 
 
 .text__price {
-    margin-left: 80px;
+    margin-left: 70px;
 }
 
 .btn-resto {
+    margin-right: 80px;
     margin-bottom: 100px;
 }
 
+@-moz-document url-prefix() {      /*** FIREFOX ***/
+    
+    .menu-content {
+        margin: 0px;
+    }
+
+    .btn-resto {
+        margin-left: 30px;
+    }
+}
 
 footer {
     position: absolute;

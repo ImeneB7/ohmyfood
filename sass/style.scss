@@ -250,18 +250,46 @@ header {
         font-size: 25px;
         top: 10%;
         right: 0%;
-    }
-
-    .fa-solid  {
+        
+        &.fa-solid  {
         opacity: 0;
         &:hover {
             opacity: 1;
             color: transparent;
             background-clip: text;
-            transition: all 0.4s ease-in-out;
             background-image: vars.$btn-background;
+            animation: fadeInn 1s , fadeOutt 1s 2s;
+        }
+
+    }
+    @keyframes fadeInn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
         }
     }
+
+    @keyframes fadeOutt {
+        0% {
+            opacity: 2;
+            
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+    &:not(.fa-solid:hover) {
+        animation: fadeOut 1s backwards;
+    }
+    }
+
+    
+    
 
     .card {
         background-color: white;
@@ -311,14 +339,12 @@ footer {
     background-color: vars.$footer-color;
     width: 100%;
     
-
-
     .logo-footer {
         margin-top: 20px;
         margin-left: 25px;
         width: 100px;
         filter: brightness(100);
-}
+    }
 
     ul {
         list-style-type: none;

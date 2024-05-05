@@ -195,6 +195,7 @@ header {
         
         &.fa-solid  {
         opacity: 0;
+        color : vars.$secondary-color;
         &:hover {
             opacity: 1;
             color: transparent;

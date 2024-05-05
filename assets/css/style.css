@@ -395,6 +395,7 @@ header a img {
 }
 .card-container i.fa-solid {
   opacity: 0;
+  color: #FF79DA;
 }
 .card-container i.fa-solid:hover {
   opacity: 1;

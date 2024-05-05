@@ -21,6 +21,7 @@ header {
     padding-top: 18px;
     width: 100%;
     background-color: vars.$background-color-2;
+    @include mixins.shadow;
 
     & a img {
        width: 150px;

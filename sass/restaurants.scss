@@ -1,6 +1,7 @@
 @use "../sass/utils/variables" as vars;
 @use "../sass/utils/mixins" as mixins;
 @use "../sass/layouts/footer";
+@use "../sass/utils/animation";
 
 
 *  {
@@ -72,7 +73,6 @@ header {
     left: 82%;
     
     .fa-solid  {
-        color: vars.$btn-background;
         opacity: 0;
     &:hover {
         opacity: 1;
@@ -80,32 +80,12 @@ header {
         background-clip: text;
         background-image: vars.$btn-background;
         animation: fadeInn 1s , fadeOutt 1s 2s;
+    }  
     }
-    
-    @keyframes fadeInn {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
+    &:hover .fa-solid {
+        animation: fadeInn 1s;
     }
-
-    @keyframes fadeOutt {
-        0% {
-            opacity: 0.5;
-        }
-        
-        100% {
-            opacity: 0;
-        }   
-    }
-    
-}
-&:hover .fa-solid {
-    animation: fadeInn 1s;
-}
-&:not(:hover) .fa-solid {
+    &:not(:hover) .fa-solid {
         animation: fadeOutt 1s backwards;
     }  
       
@@ -116,6 +96,8 @@ header {
     margin-left: 15px;
     font-size: 16px;
     font-weight: 300;
+    border-bottom: vars.$tertiary-color solid 3px;
+    width: 11%;
 }
 
 
@@ -138,7 +120,6 @@ header {
     
     .menu {
     position: relative;
-    /*margin-bottom: 45px;*/
         .menu-content {
         position: relative;
         border-radius: 15px;
@@ -236,25 +217,6 @@ header {
 }
 }
 
-
-
-@keyframes menu-list {              /** EFFET APPARITION MENU **/
-
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    
-    20% {
-        opacity: 0.5;
-        transform: translateY(10px);
-    }
-    
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
 .menu-content .lower-opacity {
     animation-delay: 2s;

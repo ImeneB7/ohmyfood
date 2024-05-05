@@ -1,0 +1,165 @@
+@use "../utils/variables" as vars;
+
+.footer-main {
+    position: relative;
+    top: 16px;
+    left: 0;
+    background-color: vars.$footer-color;
+    width: 100%;
+    
+    .logo-footer {
+        margin-top: 20px;
+        margin-left: 25px;
+        width: 100px;
+        filter: brightness(100);
+    }
+
+    ul {
+        list-style-type: none;
+        
+    }
+
+    li {
+        margin-left: -15px;
+        padding-bottom: 10px;
+        filter: brightness(100);
+        font-weight: bold;
+    }
+
+    i {
+        margin-right: 10px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+    
+    .info {
+        gap: 20px;
+    }
+    
+}
+
+@media(min-width: 768px) {
+
+    .footer-main {
+          top: 50px;  
+    }
+        
+}
+
+@media(min-width: 1440px) {
+
+    .footer-main {
+        ul {
+            height: 70px;
+            display: flex;
+            justify-content: flex-end;
+            gap: 50px;
+            margin-right: 330px;
+            margin-top: 30px;
+        }
+    
+         .logo-footer {
+            margin-left: 90%;
+            margin-bottom: -51px;
+        }
+    }
+}
+
+/******************* FOOTER RESTAURANTS *****************************/
+
+
+.footer-resto {
+    position: absolute;
+    top: 190%;
+    left: 0;
+    background-color: vars.$footer-color;
+    width: 100%;
+    
+
+
+    .logo-footer {
+        margin-top: 20px;
+        margin-left: 25px;
+        width: 100px;
+        filter: brightness(100);
+    }
+
+    ul {
+        list-style-type: none;
+        
+    }
+
+    li {
+        margin-left: -15px;
+        padding-bottom: 10px;
+        filter: brightness(100);
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    i {
+        margin-right: 10px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+    
+    .info {
+        gap: 20px;
+    }
+    
+}
+
+.footer-note {
+    top: 200%;
+}
+
+@media(min-width:768px) {
+
+    .footer-resto {
+        top: 215%;
+    }
+}
+
+@media(min-width:1024px) {
+
+    .footer-resto {
+        top: 225%;
+    }
+}
+
+@media(min-width: 1440px) {
+    
+    .footer-resto {
+    position: absolute;
+    top: 215%;
+    left: 0;
+    background-color: vars.$footer-color;
+    width: 100%;
+
+
+    ul {
+        height: 70px;
+        display: flex;
+        justify-content: flex-end;
+        gap: 50px;
+        margin-right: 330px;
+        margin-top: 30px;
+    }
+
+    .logo-footer {
+        margin-left: 90%;
+        margin-bottom: -51px;
+    }
+
+    .icon .fa-utensils{
+        position: absolute;
+        right: 170px;
+        justify-content: space-around;
+    }
+
+    }
+}

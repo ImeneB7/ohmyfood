@@ -15,6 +15,10 @@ header {
   padding-top: 15px;
   width: 100%;
   background-color: #F6F6F6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 header a img {
   width: 150px;
@@ -28,23 +32,21 @@ header .arrow {
   font-size: 18px;
 }
 
-.shadow {
-  box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.2509803922);
-}
-
+/*.shadow {
+    box-shadow: 0px 4px 14px 0px #00000040;
+}*/
 .image {
   height: 320px;
   width: 100%;
   object-fit: contain;
 }
 
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
+/*.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+}*/
 .title h1 {
   padding-top: 20px;
   display: flex;
@@ -135,6 +137,7 @@ header .arrow {
   padding-left: 10px;
   animation: menu-list 0.5s ease both;
   overflow: hidden;
+  box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.2509803922);
 }
 .bloc-menu .menu .menu-content h3 {
   font-size: 18px;
@@ -223,6 +226,13 @@ header .arrow {
   opacity: 0.2;
 }
 
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 .btn-resto {
   border: none;
   border-radius: 25px;
@@ -283,6 +293,10 @@ footer .info {
   header .arrow {
     position: absolute;
     left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
   .heart {
     top: 4%;

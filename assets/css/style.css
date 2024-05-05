@@ -63,6 +63,131 @@
     visibility: hidden;
   }
 }
+.footer-main {
+  position: relative;
+  top: 16px;
+  left: 0;
+  background-color: #353535;
+  width: 100%;
+}
+.footer-main .logo-footer {
+  margin-top: 20px;
+  margin-left: 25px;
+  width: 100px;
+  filter: brightness(100);
+}
+.footer-main ul {
+  list-style-type: none;
+}
+.footer-main li {
+  margin-left: -15px;
+  padding-bottom: 10px;
+  filter: brightness(100);
+  font-weight: bold;
+}
+.footer-main i {
+  margin-right: 10px;
+}
+.footer-main a {
+  text-decoration: none;
+}
+.footer-main .info {
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .footer-main {
+    top: 50px;
+  }
+}
+@media (min-width: 1440px) {
+  .footer-main ul {
+    height: 70px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 50px;
+    margin-right: 330px;
+    margin-top: 30px;
+  }
+  .footer-main .logo-footer {
+    margin-left: 90%;
+    margin-bottom: -51px;
+  }
+}
+/******************* FOOTER RESTAURANTS *****************************/
+.footer-resto {
+  position: absolute;
+  top: 190%;
+  left: 0;
+  background-color: #353535;
+  width: 100%;
+}
+.footer-resto .logo-footer {
+  margin-top: 20px;
+  margin-left: 25px;
+  width: 100px;
+  filter: brightness(100);
+}
+.footer-resto ul {
+  list-style-type: none;
+}
+.footer-resto li {
+  margin-left: -15px;
+  padding-bottom: 10px;
+  filter: brightness(100);
+  font-weight: bold;
+  text-decoration: none;
+}
+.footer-resto i {
+  margin-right: 10px;
+}
+.footer-resto a {
+  text-decoration: none;
+}
+.footer-resto .info {
+  gap: 20px;
+}
+
+.footer-note {
+  top: 200%;
+}
+
+@media (min-width: 768px) {
+  .footer-resto {
+    top: 215%;
+  }
+}
+@media (min-width: 1024px) {
+  .footer-resto {
+    top: 225%;
+  }
+}
+@media (min-width: 1440px) {
+  .footer-resto {
+    position: absolute;
+    top: 215%;
+    left: 0;
+    background-color: #353535;
+    width: 100%;
+  }
+  .footer-resto ul {
+    height: 70px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 50px;
+    margin-right: 330px;
+    margin-top: 30px;
+  }
+  .footer-resto .logo-footer {
+    margin-left: 90%;
+    margin-bottom: -51px;
+  }
+  .footer-resto .icon .fa-utensils {
+    position: absolute;
+    right: 170px;
+    justify-content: space-around;
+  }
+}
 * {
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
@@ -176,8 +301,9 @@ header a img {
   color: #7e7e7e;
 }
 .fonct .icon-fonct:hover {
+  opacity: 2;
   color: #9356DC;
-  transition: 2ms;
+  transition: 5ms;
 }
 .fonct .number {
   color: white;
@@ -293,35 +419,7 @@ header a img {
 }
 
 footer {
-  position: relative;
-  top: 16px;
-  left: 0;
-  background-color: #353535;
-  width: 100%;
-}
-footer .logo-footer {
-  margin-top: 20px;
-  margin-left: 25px;
-  width: 100px;
-  filter: brightness(100);
-}
-footer ul {
-  list-style-type: none;
-}
-footer li {
-  margin-left: -15px;
-  padding-bottom: 10px;
-  filter: brightness(100);
-  font-weight: bold;
-}
-footer i {
-  margin-right: 10px;
-}
-footer a {
-  text-decoration: none;
-}
-footer .info {
-  gap: 20px;
+  top: 250%;
 }
 
 /***** MEDIA QUERIES ******/ /**** TABLETTE ****/
@@ -491,17 +589,5 @@ footer .info {
     grid-template-columns: 1fr 1fr;
     width: 90%;
     padding-left: 150px;
-  }
-  footer ul {
-    height: 70px;
-    display: flex;
-    justify-content: flex-end;
-    gap: 50px;
-    margin-right: 330px;
-    margin-top: 30px;
-  }
-  footer .logo-footer {
-    margin-left: 90%;
-    margin-bottom: -51px;
   }
 }/*# sourceMappingURL=style.css.map */

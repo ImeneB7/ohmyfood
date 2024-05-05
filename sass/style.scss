@@ -1,6 +1,7 @@
 @use "../sass/utils/variables" as vars;
 @use "../sass/layouts/loader";
 @use "../sass/utils/mixins" as mixins;
+@use "../sass/layouts/footer";
 
 *  {
     font-family: 'Roboto', sans-serif;
@@ -122,8 +123,9 @@ header {
         font-size: 20px;
         color: #7e7e7e;
             &:hover {
+                opacity: 2;
                 color: vars.$primary-color;
-                transition: 2ms;
+                transition: 5ms;
          }
 }
     .number {
@@ -260,43 +262,7 @@ header {
 }
 
 footer {
-    position: relative;
-    top: 16px;
-    left: 0;
-    background-color: vars.$footer-color;
-    width: 100%;
-    
-    .logo-footer {
-        margin-top: 20px;
-        margin-left: 25px;
-        width: 100px;
-        filter: brightness(100);
-    }
-
-    ul {
-        list-style-type: none;
-        
-    }
-
-    li {
-        margin-left: -15px;
-        padding-bottom: 10px;
-        filter: brightness(100);
-        font-weight: bold;
-    }
-
-    i {
-        margin-right: 10px;
-    }
-
-    a {
-        text-decoration: none;
-    }
-    
-    .info {
-        gap: 20px;
-    }
-    
+    top: 250%;
 }
 
 /***** MEDIA QUERIES ******/                                                                 /**** TABLETTE ****/
@@ -509,21 +475,5 @@ footer {
         padding-left: 150px;
     }
 
-    footer {
-
-     ul {
-        height: 70px;
-        display: flex;
-        justify-content: flex-end;
-        gap: 50px;
-        margin-right: 330px;
-        margin-top: 30px;
-    }
-
-     .logo-footer {
-        margin-left: 90%;
-        margin-bottom: -51px;
-    }
-}
 
 }

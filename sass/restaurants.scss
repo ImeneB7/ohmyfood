@@ -19,6 +19,7 @@ header {
     padding-top: 15px;
     width: 100%;
     background-color: vars.$background-color-1;
+    @include mixins.center;
 
     & a img {
        width: 150px;
@@ -32,11 +33,12 @@ header {
         color: #353535;
         font-size: 18px;
     }
+    
 }
 
-.shadow {
+/*.shadow {
     box-shadow: 0px 4px 14px 0px #00000040;
-}
+}*/
 
 .image {
     height: 320px;
@@ -44,12 +46,12 @@ header {
     object-fit: contain;
 }
 
-.center {
+/*.center {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center; 
-}
+}*/
 
 .title h1{
     padding-top: 20px;
@@ -168,48 +170,50 @@ header {
         }
         
         
-    .animation {
-        position: absolute;
-        background-color: vars.$tertiary-color;
-        color: white;
-        height: 75px;
-        font-size: 20px;
-        padding: 22.5px 20px;
-        border-radius: 0 15px 15px 0;
-        right: 0;
-        top: 0;
-        transform: translateX(60px);
-        transition: all 0.5s ease-in-out;
-        transition-delay: 0s;
-    }
-
-    .check-sign {
-        padding-top: 7px;
-        transform: rotate(0deg);
-        transition: all 0.5s ease-in-out;
-    }
-
-    &:hover {
-        cursor: pointer;
-        
-        .text__price {
-            margin-left: -60px;
-        }
-
         .animation {
-            transform: translateX(0);
+            position: absolute;
+            background-color: vars.$tertiary-color;
+            color: white;
+            height: 75px;
+            font-size: 20px;
+            padding: 22.5px 20px;
+            border-radius: 0 15px 15px 0;
+            right: 0;
+            top: 0;
+            transform: translateX(60px);
+            transition: all 0.5s ease-in-out;
+            transition-delay: 0s;
         }
-    }
 
-        .text__price   {
-            display: flex;
-            justify-content: space-around;
-            position: relative;
-            left: 75%;
-            bottom: 50px;
+        .check-sign {
+            padding-top: 7px;
+            transform: rotate(0deg);
             transition: all 0.5s ease-in-out;
         }
-    }
+
+        &:hover {
+            cursor: pointer;
+            
+            .text__price {
+                margin-left: -60px;
+            }
+
+            .animation {
+                transform: translateX(0);
+            }
+        }
+
+            .text__price   {
+                display: flex;
+                justify-content: space-around;
+                position: relative;
+                left: 75%;
+                bottom: 50px;
+                transition: all 0.5s ease-in-out;
+            }
+            @include mixins.shadow
+        }
+
     .menu-content:nth-child(2) {                       /** EFFET APPARITION MENU **/
         animation: menu-list 3s ease both 0.5s;
     }
@@ -254,22 +258,26 @@ header {
     opacity: 0.2;
 }
 
+.center {
+    @include mixins.center;
+}
 
 .btn-resto {
     border: none;
     border-radius: 25px;
     margin-top: 30px;
     margin-bottom: 120px;
-    
     color: white;
     background: vars.$btn-background;
     width: 218px;
     height: 50px;
     font-size: 16px;
+    
         &:hover{
             opacity: 0.85;
             transition: all 0.2s ease-in-out;
         }
+    
 }
 
 @-moz-document url-prefix() {
@@ -330,6 +338,7 @@ footer {
     header .arrow {
         position: absolute;
         left: 15px;
+        @include mixins.center;
     }
 
 

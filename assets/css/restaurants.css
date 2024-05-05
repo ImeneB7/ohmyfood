@@ -292,25 +292,28 @@ header .arrow {
   height: 75px;
   margin-left: 15px;
   margin-bottom: 15px;
-  line-height: 5px;
-  padding-top: 2px;
+  line-height: 15px;
+  padding-top: 20px;
   padding-left: 10px;
   animation: menu-list 0.5s ease both;
   overflow: hidden;
   box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.2509803922);
 }
 .bloc-menu .menu .menu-content h3 {
+  width: 100%;
   font-size: 18px;
   font-weight: 600;
   white-space: nowrap;
-  width: calc(100% - 50px);
+  width: 75%;
   text-overflow: ellipsis;
+  margin: 0;
+  overflow: hidden;
 }
 .bloc-menu .menu .menu-content p {
   white-space: nowrap;
   overflow: hidden;
-  line-height: 20px;
-  width: calc(100% - 80px);
+  line-height: 15px;
+  width: 70%;
   text-overflow: ellipsis;
   font-size: 15px;
   letter-spacing: 0.03em;
@@ -348,8 +351,8 @@ header .arrow {
   display: flex;
   justify-content: space-around;
   position: relative;
-  left: 75%;
-  bottom: 50px;
+  left: 72%;
+  bottom: 45px;
   transition: all 0.5s ease-in-out;
 }
 .bloc-menu .menu .menu-content:nth-child(2) { /** EFFET APPARITION MENU **/

@@ -18,14 +18,15 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    padding-top: 18px;
+    padding-top: 15px;
     width: 100%;
     background-color: vars.$background-color-2;
+    z-index: 999;
     @include mixins.shadow;
 
     & a img {
-       width: 150px;
-       margin-bottom: 20px;
+       width: 140px;
+       margin-bottom: 10px;
     }
 }
 

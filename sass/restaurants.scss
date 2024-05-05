@@ -128,25 +128,28 @@ header {
         height: 75px;
         margin-left: 15px;
         margin-bottom: 15px;
-        line-height: 5px;
-        padding-top: 2px;
+        line-height: 15px;
+        padding-top: 20px;
         padding-left: 10px;
         animation: menu-list 0.5s ease both;
         overflow: hidden;
+        
         & h3{
+            width: 100%;
             font-size: 18px;
             font-weight: 600;
-            
             white-space: nowrap;
-            width: calc(100% - 50px);
+            width: calc(100% - 25%);
             text-overflow: ellipsis;
+            margin: 0;
+            overflow: hidden;
             }
 
         & p {
             white-space: nowrap;
             overflow: hidden;
-            line-height: 20px;
-            width: calc(100% - 80px);
+            line-height: 15px;
+            width: calc(100% - 30%);
             text-overflow: ellipsis;
             font-size: 15px;
             letter-spacing: .03em;
@@ -179,7 +182,7 @@ header {
             cursor: pointer;
             
             .text__price {
-                margin-left: -60px;
+               margin-left: -60px; 
             }
 
             .animation {
@@ -187,15 +190,16 @@ header {
             }
         }
 
-            .text__price   {
-                display: flex;
-                justify-content: space-around;
-                position: relative;
-                left: 75%;
-                bottom: 50px;
-                transition: all 0.5s ease-in-out;
-            }
-            @include mixins.shadow
+        .text__price   {   
+            display: flex;
+            justify-content: space-around;
+            position: relative;
+            left: 72%;
+            bottom: 45px;
+            transition: all 0.5s ease-in-out;
+        }
+
+        @include mixins.shadow
         }
 
     .menu-content:nth-child(2) {                       /** EFFET APPARITION MENU **/

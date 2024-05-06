@@ -97,7 +97,7 @@ header {
     font-size: 16px;
     font-weight: 300;
     border-bottom: vars.$tertiary-color solid 3px;
-    width: 11%;
+    width: 41px;
 }
 
 
@@ -137,7 +137,7 @@ header {
         & h3{
             width: 100%;
             font-size: 18px;
-            font-weight: 600;
+            font-weight: 500;
             white-space: nowrap;
             width: calc(100% - 25%);
             text-overflow: ellipsis;
@@ -251,12 +251,13 @@ header {
 
 @-moz-document url-prefix() {
     .menu {
-        margin-bottom: 70px;
+        margin-bottom: 10px;
     }
 
     .menu-content {
-        padding-top: -20px;
+        top: 0px;
     }
+    
 }
 
 .btn-note {
@@ -310,7 +311,7 @@ header {
     }
 
     .text__price {
-        margin-left: 85px;
+        margin-left: 55px;
     }
 
     .btn-resto {
@@ -324,6 +325,11 @@ header {
 
         .menu-content {
             padding-top: -20px;
+        }
+        .animation {
+            transform: translateX(60px);
+            transition: all 0.5s ease-in-out;
+            transition-delay: 0s;
         }
     }
 
@@ -362,7 +368,7 @@ header {
     }
 
     .text__price {
-        margin-left: 45px;
+        margin-left: 35px;
     }
 
     .btn-resto{
@@ -427,7 +433,7 @@ header {
 
 
 .text__price {
-    margin-left: 70px;
+    margin-left: 46px;
 }
 
 .btn-resto {
@@ -441,8 +447,16 @@ header {
         margin: 0px;
     }
 
+    .menu {
+        top: 40px;
+    }
+
     .btn-resto {
         margin-left: 30px;
+    }
+
+    footer {
+        margin-top: 80px;
     }
 }
 

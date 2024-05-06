@@ -261,7 +261,7 @@ header .arrow {
   font-size: 16px;
   font-weight: 300;
   border-bottom: #99E2D0 solid 3px;
-  width: 11%;
+  width: 41px;
 }
 
 .bloc-menu {
@@ -302,7 +302,7 @@ header .arrow {
 .bloc-menu .menu .menu-content h3 {
   width: 100%;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
   white-space: nowrap;
   width: 75%;
   text-overflow: ellipsis;
@@ -400,10 +400,10 @@ header .arrow {
 
 @-moz-document url-prefix() {
   .menu {
-    margin-bottom: 70px;
+    margin-bottom: 10px;
   }
   .menu-content {
-    padding-top: -20px;
+    top: 0px;
   }
 }
 .btn-note {
@@ -449,7 +449,7 @@ header .arrow {
     padding-left: 45px;
   }
   .text__price {
-    margin-left: 85px;
+    margin-left: 55px;
   }
   .btn-resto {
     margin-right: 20px;
@@ -460,6 +460,11 @@ header .arrow {
     }
     .menu-content {
       padding-top: -20px;
+    }
+    .animation {
+      transform: translateX(60px);
+      transition: all 0.5s ease-in-out;
+      transition-delay: 0s;
     }
   }
 }
@@ -488,7 +493,7 @@ header .arrow {
     }
   }
   .text__price {
-    margin-left: 45px;
+    margin-left: 35px;
   }
   .btn-resto {
     margin-bottom: 120px;
@@ -534,7 +539,7 @@ header .arrow {
     margin-top: 10px;
   }
   .text__price {
-    margin-left: 70px;
+    margin-left: 46px;
   }
   .btn-resto {
     margin-right: 80px;
@@ -544,8 +549,14 @@ header .arrow {
     .menu-content {
       margin: 0px;
     }
+    .menu {
+      top: 40px;
+    }
     .btn-resto {
       margin-left: 30px;
+    }
+    footer {
+      margin-top: 80px;
     }
   }
 }/*# sourceMappingURL=restaurants.css.map */

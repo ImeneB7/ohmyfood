@@ -468,6 +468,11 @@ footer {
   top: 250%;
 }
 
+@-moz-document url-prefix() {
+  .btn-resto:active, .btn-resto:focus {
+    opacity: 0.85;
+  }
+}
 /***** MEDIA QUERIES ******/ /**** TABLETTE ****/
 @media (min-width: 768px) {
   body {
@@ -579,7 +584,7 @@ footer {
     padding-left: 60px;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1440px) { /*** LARGE DESKTOP ***/
   body {
     margin: 0;
   }

@@ -402,8 +402,20 @@ header .arrow {
   .menu {
     margin-bottom: 10px;
   }
+  .btn-resto:active, .btn-resto:focus {
+    opacity: 0.85;
+  }
   .menu-content {
     top: 0px;
+  }
+  .btn-note {
+    margin-top: 100px;
+  }
+  .footer-note {
+    margin-top: 200px;
+  }
+  footer {
+    margin-top: 100px;
   }
 }
 .btn-note {

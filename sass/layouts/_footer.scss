@@ -72,7 +72,7 @@
 
 .footer-resto {
     position: absolute;
-    top: 190%;
+    top: 180%;
     left: 0;
     background-color: vars.$footer-color;
     width: 100%;
@@ -114,13 +114,26 @@
 }
 
 .footer-note {
-    top: 200%;
+    top: 180%;
+}
+
+@-moz-document url-prefix() {
+    .footer-resto {
+        top: 190%;
+    }
+    
 }
 
 @media(min-width:768px) {
 
     .footer-resto {
-        top: 215%;
+        top: 206%;
+    }
+
+    @-moz-document url-prefix() {
+        .footer-resto {
+            top: 225%;
+        }
     }
 }
 
@@ -135,7 +148,7 @@
     
     .footer-resto {
     position: absolute;
-    top: 215%;
+    top: 208%;
     left: 0;
     background-color: vars.$footer-color;
     width: 100%;
@@ -161,5 +174,10 @@
         justify-content: space-around;
     }
 
+    }
+    @-moz-document url-prefix() {
+        .footer-resto {
+            margin-top: 240px;
+        }
     }
 }

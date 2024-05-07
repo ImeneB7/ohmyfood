@@ -283,8 +283,28 @@ footer {
     .btn-resto:active, .btn-resto:focus {
         opacity: 0.85;
     }
-    
+
+    .icon-fonct {
+        position: relative;
+        padding: 20px;
+        &:active {
+        opacity: 1;
+        color: #9356DC;
+    }
+    }
+
+    .card-container {
+        position: relative;
+        .fa-solid { 
+            opacity: 0;
+            &:active {
+                color: #9356DC;
+                opacity: 1;  
+            }  
+        }
+    }
 }
+
 
 /***** MEDIA QUERIES ******/                                                                 /**** TABLETTE ****/
 

@@ -87,7 +87,7 @@ header {
     }
     &:not(:hover) .fa-solid {
         animation: fadeOutt 1s backwards;
-    }  
+    }
       
 }
 
@@ -102,14 +102,13 @@ header {
 
 
 .bloc-menu {
-    position: relative;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     margin-left: 0%;
     margin-top: 0px;
     position: absolute;
-    top: 226px;
+    top: 250px;
     border-radius: 45px 35px 0 0;
     background-color: vars.$background-color-1;
     width: 100%;
@@ -232,9 +231,10 @@ header {
 }
 
 .btn-resto {
+    position: relative;
     border: none;
     border-radius: 25px;
-    margin-top: 30px;
+    margin-top: 80px;
     margin-bottom: 120px;
     color: white;
     background: vars.$btn-background;
@@ -250,19 +250,62 @@ header {
 }
 
 @-moz-document url-prefix() {
-    .menu {
-        margin-bottom: 10px;
-        
+     
+    .bloc-menu {
+        top: 30%;
+        height: 180%;
     }
+
+    .animation {
+        position: absolute;
+        background-color: vars.$tertiary-color;
+        color: white;
+        height: 75px;
+        font-size: 20px;
+        padding: 22.5px 20px;
+        border-radius: 0 15px 15px 0;
+        right: 0;
+        top: 0;
+        transform: translateX(60px);
+        transition: all 0.5s ease-in-out;
+        
+        &:active {
+        .text__price {
+           margin-left: -60px; 
+        }
+    }
+    }
+
+    .check-sign:active {
+        padding-top: 7px;
+        transform: rotate(0deg);
+        transition: all 0.5s ease-in-out;
+    }
+    
     
     .btn-resto:active, .btn-resto:focus {
         opacity: 0.85;
     }
 
-    .menu-content {
-        top: 0px;
-        
+    .fa-heart {   
+    &:active {
+        opacity: 1;
+        color: vars.$primary-color;
     }
+    &:focus {
+        opacity: 1;
+        color: vars.$primary-color;
+    }
+    }
+
+    .btn-resto {
+        top: 0;
+    }
+
+    }
+
+    
+
     .btn-note {
         margin-top: 100px;
     }
@@ -272,10 +315,10 @@ header {
     footer {
         margin-top: 100px;
     }
-}
+
 
 .btn-note {
-    bottom: 50%;
+    bottom: 20%;
 }
 
 
@@ -329,25 +372,34 @@ header {
     }
 
     .btn-resto {
-        margin-right: 20px;
+        margin-right: 45px;
     }
 
     @-moz-document url-prefix() {
+        
+        .bloc-menu {
+            top: 60%;
+            height: 200%;
+        }
+
+        .btn-resto {
+            margin-left: 0px;
+            margin-bottom: 30px;
+        }
+        
         .menu {
-            margin-bottom: 70px;
+            margin-top: -20px;
+            margin-bottom: 20px;
+            
+            .menu-content {
+                margin-top: -10px;
+        }
+            .animation {
+                background-color: vars.$tertiary-color;
+                transform: translateX(60px);
+            }
         }
 
-        .menu-content {
-            padding-top: -20px;
-        }
-        .animation {
-            transform: translateX(60px);
-            transition: all 0.5s ease-in-out;
-            transition-delay: 0s;
-        }
-    }
-
-    
 }
 
 @media(min-width: 1024px) {             /*** DESKTOP ***/
@@ -361,7 +413,7 @@ header {
     
     .bloc-menu {
         width: 80%;
-        height: 175%;
+        height: 185%;
         margin-top: 50px;
         margin-left: 100px;
             .menu {
@@ -371,24 +423,31 @@ header {
         }
     }
 
-    @-moz-document url-prefix() {
-        .menu {
-            margin-bottom: 70px;
-        }
-
-        .menu-content {
-            padding-top: -30px;
-        }
-    }
-
+    
     .text__price {
         margin-left: 35px;
     }
 
     .btn-resto{
-        margin-bottom: 120px;
+        margin-bottom: 100px;
     }
 
+@-moz-document url-prefix() {
+
+    .bloc-menu {
+        height: 180%;
+    }
+    .menu {
+            padding-top: 170px;
+    }
+
+    .menu-content {
+            padding-top: -30px;
+            
+    }
+
+    }
+    
 }
 
 
@@ -454,24 +513,29 @@ header {
     margin-right: 80px;
     margin-bottom: 100px;
 }
+}
 
 @-moz-document url-prefix() {      /*** FIREFOX ***/
     
-    .menu-content {
-        margin: 0px;
+    .bloc-menu {
+        height: 180%;
     }
 
     .menu {
         top: 40px;
+        
+        .menu-content {
+        margin: 0px;
+    }
+
     }
 
     .btn-resto {
+        margin-bottom: 70px;
         margin-left: 30px;
+        
     }
 
-    footer {
-        margin-top: 80px;
-    }
 }
 
 }

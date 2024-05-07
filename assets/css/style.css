@@ -192,7 +192,7 @@
 }
 @media (min-width: 768px) {
   .footer-resto {
-    top: 206%;
+    top: 202%;
   }
   .footer-note {
     top: 198%;
@@ -208,7 +208,7 @@
     top: 225%;
   }
   .footer-note {
-    top: 198%;
+    top: 205%;
   }
 }
 @media (min-width: 1440px) {

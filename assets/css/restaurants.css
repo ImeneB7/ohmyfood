@@ -94,7 +94,7 @@
 }
 @media (min-width: 768px) {
   .footer-resto {
-    top: 206%;
+    top: 202%;
   }
   .footer-note {
     top: 198%;
@@ -110,7 +110,7 @@
     top: 225%;
   }
   .footer-note {
-    top: 198%;
+    top: 205%;
   }
 }
 @media (min-width: 1440px) {
@@ -565,10 +565,20 @@ footer {
   }
   @-moz-document url-prefix() {
     .bloc-menu {
+      top: 52%;
+    }
+    .bloc-note {
+      top: 50%;
       height: 180%;
     }
+    .btn-note {
+      bottom: 10px;
+    }
+    .menu-note {
+      padding-bottom: 40px;
+    }
     .menu {
-      padding-top: 170px;
+      padding-top: 210px;
     }
     .menu-content {
       padding-top: -30px;

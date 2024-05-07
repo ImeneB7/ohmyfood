@@ -435,10 +435,20 @@ header {
 @-moz-document url-prefix() {
 
     .bloc-menu {
+        top: 52%;
+    }
+    .bloc-note {
+        top: 50%;
         height: 180%;
     }
+    .btn-note {
+        bottom: 10px;
+    }
+    .menu-note {
+        padding-bottom: 40px;
+    }
     .menu {
-            padding-top: 170px;
+            padding-top: 210px;
     }
 
     .menu-content {

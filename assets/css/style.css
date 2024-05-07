@@ -194,6 +194,9 @@
   .footer-resto {
     top: 206%;
   }
+  .footer-note {
+    top: 198%;
+  }
   @-moz-document url-prefix() {
     .footer-resto {
       top: 225%;
@@ -203,6 +206,9 @@
 @media (min-width: 1024px) {
   .footer-resto {
     top: 225%;
+  }
+  .footer-note {
+    top: 198%;
   }
 }
 @media (min-width: 1440px) {

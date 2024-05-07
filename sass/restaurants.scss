@@ -363,7 +363,6 @@ header {
     .bloc-menu {
         width: 100%;
         top: 400px;
-        height: 170%;
         padding-left: 45px;
     }
 
@@ -399,7 +398,7 @@ header {
                 transform: translateX(60px);
             }
         }
-
+        
 }
 
 @media(min-width: 1024px) {             /*** DESKTOP ***/
@@ -432,6 +431,7 @@ header {
         margin-bottom: 100px;
     }
 
+    
 @-moz-document url-prefix() {
 
     .bloc-menu {

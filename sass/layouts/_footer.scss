@@ -121,13 +121,17 @@
     .footer-resto {
         top: 190%;
     }
-    
+
 }
 
 @media(min-width:768px) {
 
     .footer-resto {
         top: 206%;
+    }
+
+    .footer-note {
+        top: 198%;
     }
 
     @-moz-document url-prefix() {
@@ -141,6 +145,9 @@
 
     .footer-resto {
         top: 225%;
+    }
+    .footer-note {
+        top: 198%;
     }
 }
 

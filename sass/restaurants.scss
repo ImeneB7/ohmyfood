@@ -363,6 +363,11 @@ header {
 
     @-moz-document url-prefix() {
         
+        .heart {
+            top: 3.2%;
+            left: 270px;
+        }
+
         .bloc-menu {
             top: 50%;
             height: 200%;
@@ -374,7 +379,7 @@ header {
         }
         
         .menu {
-            margin-top: -400px;
+            margin-top: -290px;
             margin-bottom: 20px;
             
             .menu-content {
@@ -449,7 +454,7 @@ header {
 @-moz-document url-prefix() {
 
     .bloc-menu {
-        top: 52%;
+        top: 44%;
     }
     .bloc-note {
         top: 50%;
@@ -462,7 +467,7 @@ header {
         padding-bottom: 40px;
     }
     .menu {
-            padding-top: 210px;
+            padding-top: 0px;
     }
 
     .menu-content {

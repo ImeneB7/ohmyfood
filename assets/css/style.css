@@ -197,6 +197,9 @@
   .footer-resto {
     top: 190%;
   }
+  .footer-note {
+    top: 180%;
+  }
 }
 @media (min-width: 768px) {
   .footer-resto {
@@ -209,6 +212,9 @@
     .footer-resto {
       top: 218%;
     }
+    .footer-note {
+      top: 200%;
+    }
   }
 }
 @media (min-width: 1024px) {
@@ -217,6 +223,14 @@
   }
   .footer-note {
     top: 205%;
+  }
+  @-moz-document url-prefix() {
+    .footer-resto {
+      top: 218%;
+    }
+    .footer-note {
+      top: 208%;
+    }
   }
 }
 @media (min-width: 1440px) {
@@ -246,7 +260,10 @@
   }
   @-moz-document url-prefix() {
     .footer-resto {
-      margin-top: 240px;
+      top: 218%;
+    }
+    .footer-note {
+      top: 200%;
     }
   }
 }

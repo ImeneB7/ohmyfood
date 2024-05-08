@@ -9,10 +9,18 @@
 }
 @keyframes fadeOutt {
   0% {
-    opacity: 0.5;
+    opacity: 1;
   }
   100% {
     opacity: 0;
+  }
+}
+@keyframes fadeInnn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 /** EFFET APPARITION MENU **/
@@ -199,7 +207,7 @@
   }
   @-moz-document url-prefix() {
     .footer-resto {
-      top: 225%;
+      top: 218%;
     }
   }
 }

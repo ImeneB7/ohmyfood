@@ -87,6 +87,7 @@ header {
     }
     &:not(:hover) .fa-solid {
         animation: fadeOutt 1s backwards;
+        color: #9356Dc;
     }
       
 }
@@ -255,57 +256,43 @@ header {
         top: 30%;
         height: 180%;
     }
-
-    .animation {
-        position: absolute;
-        background-color: vars.$tertiary-color;
-        color: white;
-        height: 75px;
-        font-size: 20px;
-        padding: 22.5px 20px;
-        border-radius: 0 15px 15px 0;
-        right: 0;
-        top: 0;
-        transform: translateX(60px);
-        transition: all 0.5s ease-in-out;
-        
-        &:active {
-        .text__price {
-           margin-left: -60px; 
-        }
-    }
-    }
-
-    .check-sign:active {
-        padding-top: 7px;
-        transform: rotate(0deg);
-        transition: all 0.5s ease-in-out;
-    }
-    
     
     .btn-resto:active, .btn-resto:focus {
         opacity: 0.85;
-    }
-
-    .fa-heart {   
-    &:active {
-        opacity: 1;
-        color: vars.$primary-color;
-    }
-    &:focus {
-        opacity: 1;
-        color: vars.$primary-color;
-    }
     }
 
     .btn-resto {
         top: 0;
     }
 
+    .menu {
+        display: block;
+        .text__price:active {
+           margin-left: -60px; 
+           transition:  0.5s ease-in-out;
+        }
+
+        .animation:active {
+            transform: translateX(60px);
+        }
+    }
+    
+    /**** ANIMATION COEUR FIREFOX A TRAVAILLER *****/
+
+    .heart {
+        .fa-solid  {
+            opacity: 0;
+        }
+        &:active.fa-solid {
+            animation: fadeInnn;
+            color: #9356Dc;
+        } 
+    } 
+
+
     }
 
     
-
     .btn-note {
         margin-top: 100px;
     }
@@ -377,7 +364,7 @@ header {
     @-moz-document url-prefix() {
         
         .bloc-menu {
-            top: 60%;
+            top: 50%;
             height: 200%;
         }
 
@@ -387,7 +374,7 @@ header {
         }
         
         .menu {
-            margin-top: -20px;
+            margin-top: -400px;
             margin-bottom: 20px;
             
             .menu-content {
@@ -398,6 +385,33 @@ header {
                 transform: translateX(60px);
             }
         }
+
+        /*.heart {
+        .fa-solid  {
+            opacity: 0;
+            animation-delay: 10s;
+        }
+        &:active .fa-solid {
+            animation: fadeInnn 400ms both;
+            background-color: #9356Dc;
+            opacity: 2;
+        }
+        &:not(:active) .fa-solid {
+            animation: fadeInnn 8s, fadeOutt ;            /**** ANIMATION COEUR FIREFOX A TRAVAILLER *****//*
+            color: #9356Dc;
+            opacity: 1;
+        }
+          
+    }
+    .heart {
+        .fa-solid  {
+            opacity: 0;
+        }
+        &:active.fa-solid {
+            animation: fadeInnn;
+            color: #9356Dc;
+        } 
+    }*/
         
 }
 

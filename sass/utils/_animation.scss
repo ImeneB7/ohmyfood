@@ -11,13 +11,24 @@
 
 @keyframes fadeOutt {
     0% {
-        opacity: 0.5;
+        opacity: 1;
     }
     
     100% {
         opacity: 0;
     }   
 }
+
+
+@keyframes fadeInnn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 
 
 /** EFFET APPARITION MENU **/
@@ -40,6 +51,9 @@
     }
 }
 
+
+
+
 /*** LOADER ***/
 
 @keyframes spin {
@@ -60,3 +74,4 @@
         visibility: hidden;
     }
 }
+

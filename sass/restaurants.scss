@@ -253,8 +253,16 @@ header {
 @-moz-document url-prefix() {
      
     .bloc-menu {
-        top: 30%;
+        top: 26%;
         height: 180%;
+    }
+
+    .menu {
+        top: -200px;
+    }
+
+    .menu-note {
+        margin-top: 170px;
     }
     
     .btn-resto:active, .btn-resto:focus {
@@ -262,11 +270,11 @@ header {
     }
 
     .btn-resto {
-        top: 0;
+        top: -140px;
     }
 
     .menu {
-        display: block;
+        
         .text__price:active {
            margin-left: -60px; 
            transition:  0.5s ease-in-out;
@@ -294,7 +302,7 @@ header {
 
     
     .btn-note {
-        margin-top: 100px;
+        margin-top: 10px;
     }
     .footer-note {
         margin-top: 200px;
@@ -437,7 +445,7 @@ header {
             .menu {
             width: 70%;
             margin-left: 115px;
-            margin-top: -250px;
+            margin-top: -300px;
         }
     }
 
@@ -462,6 +470,10 @@ header {
     }
     .btn-note {
         bottom: 10px;
+    }
+
+    .btn-resto {
+        top: 20%;
     }
     .menu-note {
         padding-bottom: 40px;

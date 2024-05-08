@@ -114,8 +114,43 @@
 }
 
 .footer-note {
+    position: absolute;
+    top: 196%;
+    left: 0;
+    background-color: vars.$footer-color;
+    width: 100%;
     top: 206%;
+    .logo-footer {
+        margin-top: 20px;
+        margin-left: 25px;
+        width: 100px;
+        filter: brightness(100);
+    }
+
+    ul {
+        list-style-type: none;
+        
+    }
+
+    li {
+        margin-left: -15px;
+        padding-bottom: 10px;
+        filter: brightness(100);
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    i {
+        margin-right: 10px;
+    }
+
+    a {
+        text-decoration: none;
+    }
     
+    .info {
+        gap: 20px;
+    }
 }
 
 
@@ -126,18 +161,9 @@
     }
 
     .footer-note {
-        top: 198%;
+        top: 220%;
     }
 
-    @-moz-document url-prefix() {
-        .footer-resto {
-            top: 228%;
-        }
-
-        .footer-note {
-            top: 200%;
-        }
-    }
 }
 
 @media(min-width:1024px) {
@@ -146,7 +172,7 @@
         top: 225%;
     }
     .footer-note {
-        top: 205%;
+        top: 215%;
     }
 
 }

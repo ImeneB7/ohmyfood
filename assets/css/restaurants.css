@@ -51,8 +51,8 @@
 }
 /******************* FOOTER RESTAURANTS *****************************/
 .footer-resto {
-  position: absolute;
-  top: 196%;
+  position: relative;
+  top: 1238px;
   left: 0;
   background-color: #353535;
   width: 100%;
@@ -119,7 +119,7 @@
 
 @media (min-width: 768px) {
   .footer-resto {
-    top: 202%;
+    top: 1220px;
   }
   .footer-note {
     top: 220%;
@@ -127,7 +127,7 @@
 }
 @media (min-width: 1024px) {
   .footer-resto {
-    top: 225%;
+    top: 1360px;
   }
   .footer-note {
     top: 215%;
@@ -135,8 +135,8 @@
 }
 @media (min-width: 1440px) {
   .footer-resto {
-    position: absolute;
-    top: 208%;
+    position: relative;
+    top: 1400px;
     left: 0;
     background-color: #353535;
     width: 100%;
@@ -224,7 +224,8 @@
 
 body {
   background-color: #ffffff;
-  margin: 0;
+  width: 100%;
+  height: 100%;
 }
 
 header {

@@ -52,7 +52,7 @@
 /******************* FOOTER RESTAURANTS *****************************/
 .footer-resto {
   position: absolute;
-  top: 180%;
+  top: 196%;
   left: 0;
   background-color: #353535;
   width: 100%;
@@ -84,17 +84,9 @@
 }
 
 .footer-note {
-  top: 180%;
+  top: 206%;
 }
 
-@-moz-document url-prefix() {
-  .footer-resto {
-    top: 180%;
-  }
-  .footer-note {
-    top: 170%;
-  }
-}
 @media (min-width: 768px) {
   .footer-resto {
     top: 202%;
@@ -104,7 +96,7 @@
   }
   @-moz-document url-prefix() {
     .footer-resto {
-      top: 218%;
+      top: 228%;
     }
     .footer-note {
       top: 200%;
@@ -117,14 +109,6 @@
   }
   .footer-note {
     top: 205%;
-  }
-  @-moz-document url-prefix() {
-    .footer-resto {
-      top: 218%;
-    }
-    .footer-note {
-      top: 208%;
-    }
   }
 }
 @media (min-width: 1440px) {
@@ -151,14 +135,6 @@
     position: absolute;
     right: 170px;
     justify-content: space-around;
-  }
-  @-moz-document url-prefix() {
-    .footer-resto {
-      top: 218%;
-    }
-    .footer-note {
-      top: 200%;
-    }
   }
 }
 /***** HEART *****/
@@ -445,51 +421,61 @@ header .arrow {
   transition: all 0.2s ease-in-out;
 }
 
-@-moz-document url-prefix() {
-  .bloc-menu {
-    top: 26%;
-    height: 180%;
-  }
-  .menu {
-    top: -50px;
-  }
-  .menu-note {
-    margin-top: 170px;
-  }
-  .btn-resto:active, .btn-resto:focus {
-    opacity: 0.85;
-  }
-  .btn-resto {
-    top: -80px;
-  }
-  .menu .text__price:active {
-    margin-left: -60px;
-    transition: 0.5s ease-in-out;
-  }
-  .menu .animation:active {
-    transform: translateX(60px);
-  }
-  /**** ANIMATION COEUR FIREFOX A TRAVAILLER *****/
-  .heart .fa-solid {
-    opacity: 0;
-  }
-  .heart:active.fa-solid {
-    animation: fadeInnn;
-    color: #9356Dc;
-  }
-}
-.btn-note {
-  margin-top: 80px;
-}
+/*@-moz-document url-prefix() {
 
-.footer-note {
-  margin-top: 200px;
-}
+    .bloc-menu {
+        top: 28%;
+        height: 180%;
+    }
 
-footer {
-  margin-top: 100px;
-}
+    .menu {
+        top: -60px;
+    }
 
+    .menu-note {
+        margin-top: 70px;
+    }
+
+    .btn-resto:active, .btn-resto:focus {
+        opacity: 0.85;
+    }
+
+    .btn-resto {
+        top: -80px;
+    }
+
+
+    .menu {
+
+        .text__price:active {
+           margin-left: -60px; 
+           transition:  0.5s ease-in-out;
+        }
+
+        .animation:active {
+            transform: translateX(60px);
+        }
+    }
+
+
+
+    .heart {
+        .fa-solid  {
+            opacity: 0;
+        }
+        &:active.fa-solid {
+            animation: fadeInnn;
+            color: #9356Dc;
+        } 
+    } 
+
+
+    }
+
+
+    .btn-note {
+        margin-top: 80px;
+    }*/
 .btn-note {
   bottom: 20%;
 }
@@ -537,57 +523,66 @@ footer {
   .btn-resto {
     margin-right: 45px;
   }
-  @-moz-document url-prefix() {
+  /*@-moz-document url-prefix() {
+
+      .heart {
+          top: 3.2%;
+          left: 270px;
+      }
+
+      .bloc-menu {
+          top: 50%;
+          height: 200%;
+      }
+
+
+      .btn-resto {
+          top: 20px;
+          margin-left: 0px;
+          margin-bottom: 30px;
+      }
+
+      .menu {
+          margin-top: -290px;
+          margin-bottom: 20px;
+
+          .menu-content {
+              margin-top: -10px;
+      }
+          .animation {
+              background-color: vars.$tertiary-color;
+              transform: translateX(60px);
+          }
+      }
+
+      .heart {
+      .fa-solid  {
+          opacity: 0;
+          animation-delay: 10s;
+      }
+      &:active .fa-solid {
+          animation: fadeInnn 400ms both;
+          background-color: #9356Dc;
+          opacity: 2;
+      }
+      &:not(:active) .fa-solid {
+          animation: fadeInnn 8s, fadeOutt ;            /**** ANIMATION COEUR FIREFOX A TRAVAILLER *****/ /*
+            color: #9356Dc;
+            opacity: 1;
+        }
+
+    }
     .heart {
-      top: 3.2%;
-      left: 270px;
-    }
-    .bloc-menu {
-      top: 50%;
-      height: 200%;
-    }
-    .btn-resto {
-      margin-left: 0px;
-      margin-bottom: 30px;
-    }
-    .menu {
-      margin-top: -290px;
-      margin-bottom: 20px;
-    }
-    .menu .menu-content {
-      margin-top: -10px;
-    }
-    .menu .animation {
-      background-color: #99E2D0;
-      transform: translateX(60px);
-    }
-    /*.heart {
-    .fa-solid  {
-        opacity: 0;
-        animation-delay: 10s;
-    }
-    &:active .fa-solid {
-        animation: fadeInnn 400ms both;
-        background-color: #9356Dc;
-        opacity: 2;
-    }
-    &:not(:active) .fa-solid {
-        animation: fadeInnn 8s, fadeOutt ;            /**** ANIMATION COEUR FIREFOX A TRAVAILLER *****/ /*
-        color: #9356Dc;
-        opacity: 1;
+        .fa-solid  {
+            opacity: 0;
+        }
+        &:active.fa-solid {
+            animation: fadeInnn;
+            color: #9356Dc;
+        } 
     }
 
-}
-.heart {
-    .fa-solid  {
-        opacity: 0;
-    }
-    &:active.fa-solid {
-        animation: fadeInnn;
-        color: #9356Dc;
-    } 
 }*/
-  }
 }
 @media screen and (min-width: 768px) and (min-width: 1024px) { /*** DESKTOP ***/
   .heart {
@@ -611,32 +606,61 @@ footer {
   .btn-resto {
     margin-bottom: 100px;
   }
-  @-moz-document url-prefix() {
-    .bloc-menu {
-      top: 44%;
-    }
-    .bloc-note {
-      top: 50%;
-      height: 180%;
-    }
-    .btn-note {
-      bottom: 10px;
-    }
-    .btn-resto {
-      top: 20%;
-    }
-    .menu-note {
-      padding-bottom: 40px;
-    }
-    .menu {
-      padding-top: 0px;
-    }
-    .menu-content {
-      padding-top: -30px;
-    }
-  }
+  /*@-moz-document url-prefix() {
+
+      .bloc-menu {
+          top: 44%;
+      }
+      .bloc-note {
+          top: 50%;
+          height: 180%;
+      }
+      .btn-note {
+          bottom: 10px;
+      }
+
+      .btn-resto {
+          top: 20%;
+      }
+      .menu-note {
+          padding-bottom: 40px;
+      }
+      .menu {
+              padding-top: 0px;
+      }
+
+      .menu-content {
+              padding-top: -30px;
+
+      }
+
+      }
+
+  }*/
+  /*@-moz-document url-prefix() {     
+
+      .bloc-menu {
+          height: 180%;
+      }
+
+      .menu {
+          top: 40px;
+
+          .menu-content {
+          margin: 0px;
+      }
+
+      }
+
+      .btn-resto {
+          margin-bottom: 70px;
+          margin-left: 30px;
+
+      }
+
+  }*/
 }
-@media screen and (min-width: 768px) and (min-width: 1440px) { /*** LARGE DESKTOP ***/
+@media screen and (min-width: 768px) and (min-width: 1024px) and (min-width: 1440px) { /*** LARGE DESKTOP ***/
   .image {
     max-width: 100%;
     max-height: 32rem;
@@ -681,22 +705,5 @@ footer {
   .btn-resto {
     margin-right: 80px;
     margin-bottom: 100px;
-  }
-}
-@media screen and (min-width: 768px) {
-  @-moz-document url-prefix() { /*** FIREFOX ***/
-    .bloc-menu {
-      height: 180%;
-    }
-    .menu {
-      top: 40px;
-    }
-    .menu .menu-content {
-      margin: 0px;
-    }
-    .btn-resto {
-      margin-bottom: 70px;
-      margin-left: 30px;
-    }
   }
 }/*# sourceMappingURL=restaurants.css.map */

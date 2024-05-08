@@ -250,19 +250,19 @@ header {
     
 }
 
-@-moz-document url-prefix() {
+/*@-moz-document url-prefix() {
      
     .bloc-menu {
-        top: 26%;
+        top: 28%;
         height: 180%;
     }
 
     .menu {
-        top: -50px;
+        top: -60px;
     }
 
     .menu-note {
-        margin-top: 170px;
+        margin-top: 70px;
     }
     
     .btn-resto:active, .btn-resto:focus {
@@ -286,7 +286,7 @@ header {
         }
     }
     
-    /**** ANIMATION COEUR FIREFOX A TRAVAILLER *****/
+   
 
     .heart {
         .fa-solid  {
@@ -304,15 +304,8 @@ header {
     
     .btn-note {
         margin-top: 80px;
-    }
-    .footer-note {
-        margin-top: 200px;
-    }
-    footer {
-        margin-top: 100px;
-    }
-
-
+    }*/
+    
 .btn-note {
     bottom: 20%;
 }
@@ -370,7 +363,7 @@ header {
         margin-right: 45px;
     }
 
-    @-moz-document url-prefix() {
+    /*@-moz-document url-prefix() {
         
         .heart {
             top: 3.2%;
@@ -382,7 +375,9 @@ header {
             height: 200%;
         }
 
+
         .btn-resto {
+            top: 20px;
             margin-left: 0px;
             margin-bottom: 30px;
         }
@@ -400,7 +395,7 @@ header {
             }
         }
 
-        /*.heart {
+        .heart {
         .fa-solid  {
             opacity: 0;
             animation-delay: 10s;
@@ -425,9 +420,9 @@ header {
             animation: fadeInnn;
             color: #9356Dc;
         } 
-    }*/
+    }
         
-}
+}*/
 
 @media(min-width: 1024px) {             /*** DESKTOP ***/
 
@@ -460,7 +455,7 @@ header {
     }
 
     
-@-moz-document url-prefix() {
+/*@-moz-document url-prefix() {
 
     .bloc-menu {
         top: 44%;
@@ -490,7 +485,7 @@ header {
 
     }
     
-}
+}*/
 
 
 
@@ -557,7 +552,7 @@ header {
 }
 }
 
-@-moz-document url-prefix() {      /*** FIREFOX ***/
+/*@-moz-document url-prefix() {     
     
     .bloc-menu {
         height: 180%;
@@ -578,6 +573,7 @@ header {
         
     }
 
-}
+}*/
 
+}
 }

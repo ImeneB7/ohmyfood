@@ -72,7 +72,7 @@
 
 .footer-resto {
     position: absolute;
-    top: 180%;
+    top: 196%;
     left: 0;
     background-color: vars.$footer-color;
     width: 100%;
@@ -114,18 +114,10 @@
 }
 
 .footer-note {
-    top: 180%;
+    top: 206%;
+    
 }
 
-@-moz-document url-prefix() {
-    .footer-resto {
-        top: 180%;
-    }
-
-    .footer-note {
-        top: 170%;
-    }
-}
 
 @media(min-width:768px) {
 
@@ -139,7 +131,7 @@
 
     @-moz-document url-prefix() {
         .footer-resto {
-            top: 218%;
+            top: 228%;
         }
 
         .footer-note {
@@ -155,15 +147,6 @@
     }
     .footer-note {
         top: 205%;
-    }
-
-    @-moz-document url-prefix() {
-        .footer-resto {
-            top: 218%;
-        }
-        .footer-note {
-            top: 208%;
-        }
     }
 
 }
@@ -199,13 +182,5 @@
     }
 
     }
-    @-moz-document url-prefix() {
-        .footer-resto {
-            top : 218%;
-        }
-
-        .footer-note {
-            top: 200%;
-        }
-    }
+    
 }

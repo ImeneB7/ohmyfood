@@ -158,7 +158,7 @@
 /******************* FOOTER RESTAURANTS *****************************/
 .footer-resto {
   position: absolute;
-  top: 180%;
+  top: 196%;
   left: 0;
   background-color: #353535;
   width: 100%;
@@ -190,17 +190,9 @@
 }
 
 .footer-note {
-  top: 180%;
+  top: 206%;
 }
 
-@-moz-document url-prefix() {
-  .footer-resto {
-    top: 180%;
-  }
-  .footer-note {
-    top: 170%;
-  }
-}
 @media (min-width: 768px) {
   .footer-resto {
     top: 202%;
@@ -210,7 +202,7 @@
   }
   @-moz-document url-prefix() {
     .footer-resto {
-      top: 218%;
+      top: 228%;
     }
     .footer-note {
       top: 200%;
@@ -223,14 +215,6 @@
   }
   .footer-note {
     top: 205%;
-  }
-  @-moz-document url-prefix() {
-    .footer-resto {
-      top: 218%;
-    }
-    .footer-note {
-      top: 208%;
-    }
   }
 }
 @media (min-width: 1440px) {
@@ -257,14 +241,6 @@
     position: absolute;
     right: 170px;
     justify-content: space-around;
-  }
-  @-moz-document url-prefix() {
-    .footer-resto {
-      top: 218%;
-    }
-    .footer-note {
-      top: 200%;
-    }
   }
 }
 * {

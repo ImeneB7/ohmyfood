@@ -250,61 +250,7 @@ header {
     
 }
 
-/*@-moz-document url-prefix() {
-     
-    .bloc-menu {
-        top: 28%;
-        height: 180%;
-    }
 
-    .menu {
-        top: -60px;
-    }
-
-    .menu-note {
-        margin-top: 70px;
-    }
-    
-    .btn-resto:active, .btn-resto:focus {
-        opacity: 0.85;
-    }
-
-    .btn-resto {
-        top: -80px;
-    }
-
-
-    .menu {
-        
-        .text__price:active {
-           margin-left: -60px; 
-           transition:  0.5s ease-in-out;
-        }
-
-        .animation:active {
-            transform: translateX(60px);
-        }
-    }
-    
-   
-
-    .heart {
-        .fa-solid  {
-            opacity: 0;
-        }
-        &:active.fa-solid {
-            animation: fadeInnn;
-            color: #9356Dc;
-        } 
-    } 
-
-
-    }
-
-    
-    .btn-note {
-        margin-top: 80px;
-    }*/
     
 .btn-note {
     bottom: 20%;
@@ -363,66 +309,7 @@ header {
         margin-right: 45px;
     }
 
-    /*@-moz-document url-prefix() {
-        
-        .heart {
-            top: 3.2%;
-            left: 270px;
-        }
-
-        .bloc-menu {
-            top: 50%;
-            height: 200%;
-        }
-
-
-        .btn-resto {
-            top: 20px;
-            margin-left: 0px;
-            margin-bottom: 30px;
-        }
-        
-        .menu {
-            margin-top: -290px;
-            margin-bottom: 20px;
-            
-            .menu-content {
-                margin-top: -10px;
-        }
-            .animation {
-                background-color: vars.$tertiary-color;
-                transform: translateX(60px);
-            }
-        }
-
-        .heart {
-        .fa-solid  {
-            opacity: 0;
-            animation-delay: 10s;
-        }
-        &:active .fa-solid {
-            animation: fadeInnn 400ms both;
-            background-color: #9356Dc;
-            opacity: 2;
-        }
-        &:not(:active) .fa-solid {
-            animation: fadeInnn 8s, fadeOutt ;            /**** ANIMATION COEUR FIREFOX A TRAVAILLER *****//*
-            color: #9356Dc;
-            opacity: 1;
-        }
-          
-    }
-    .heart {
-        .fa-solid  {
-            opacity: 0;
-        }
-        &:active.fa-solid {
-            animation: fadeInnn;
-            color: #9356Dc;
-        } 
-    }
-        
-}*/
+    
 
 @media(min-width: 1024px) {             /*** DESKTOP ***/
 
@@ -454,38 +341,6 @@ header {
         margin-bottom: 100px;
     }
 
-    
-/*@-moz-document url-prefix() {
-
-    .bloc-menu {
-        top: 44%;
-    }
-    .bloc-note {
-        top: 50%;
-        height: 180%;
-    }
-    .btn-note {
-        bottom: 10px;
-    }
-
-    .btn-resto {
-        top: 20%;
-    }
-    .menu-note {
-        padding-bottom: 40px;
-    }
-    .menu {
-            padding-top: 0px;
-    }
-
-    .menu-content {
-            padding-top: -30px;
-            
-    }
-
-    }
-    
-}*/
 
 
 
@@ -533,7 +388,7 @@ header {
 
 .menu {
     position: relative;
-    top: -50px;
+    top: -10px;
     margin-left: 160px;
 }
 
@@ -550,30 +405,13 @@ header {
     margin-right: 80px;
     margin-bottom: 100px;
 }
+
+.menu-4 {
+    padding-bottom: 250px;
 }
 
-/*@-moz-document url-prefix() {     
-    
-    .bloc-menu {
-        height: 180%;
-    }
+}
 
-    .menu {
-        top: 40px;
-        
-        .menu-content {
-        margin: 0px;
-    }
-
-    }
-
-    .btn-resto {
-        margin-bottom: 70px;
-        margin-left: 30px;
-        
-    }
-
-}*/
 
 }
 }

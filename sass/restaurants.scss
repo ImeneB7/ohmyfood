@@ -283,23 +283,24 @@ header {
     }
 
     
-    .menu-content {
-        border-radius: 15px;
-        background-color: vars.$background-color-2;
-        width: 500px;
-        height: 70px;
-        margin-left: 120px;
-        line-height: 8px;
-        padding-top: 2px;
-        padding-left: 10px;
-        margin-bottom: 12px;
-    }
+    
 
     .bloc-menu {
         width: 100%;
         top: 400px;
         padding-left: 45px;
-    }
+            .menu-content {
+            border-radius: 15px;
+            background-color: vars.$background-color-2;
+            width: 500px;
+            height: 70px;
+            margin-left: 120px;
+            line-height: 8px;
+            padding-top: 2px;
+            padding-left: 10px;
+            margin-bottom: 12px;
+        }
+        }
 
     .text__price {
         margin-left: 55px;
@@ -329,6 +330,9 @@ header {
             width: 70%;
             margin-left: 115px;
             margin-top: -300px;
+        }
+        .menu-4 {
+            padding-bottom: 250px;
         }
     }
 
@@ -384,16 +388,15 @@ header {
     background-color: vars.$background-color-1;
     width: 70%;
     height: 170%;
-}
-
-.menu {
+    .menu {
     position: relative;
     top: -10px;
     margin-left: 160px;
-}
-
-.menu-content {
-    margin-top: 10px;
+    }
+    .menu-content {
+        margin-top: 10px;
+    }
+    
 }
 
 
@@ -406,9 +409,7 @@ header {
     margin-bottom: 100px;
 }
 
-.menu-4 {
-    padding-bottom: 250px;
-}
+
 
 }
 

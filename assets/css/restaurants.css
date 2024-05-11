@@ -468,7 +468,12 @@ header .arrow {
     object-fit: cover;
     height: 500px;
   }
-  .menu-content {
+  .bloc-menu {
+    width: 100%;
+    top: 400px;
+    padding-left: 45px;
+  }
+  .bloc-menu .menu-content {
     border-radius: 15px;
     background-color: #ffffff;
     width: 500px;
@@ -478,11 +483,6 @@ header .arrow {
     padding-top: 2px;
     padding-left: 10px;
     margin-bottom: 12px;
-  }
-  .bloc-menu {
-    width: 100%;
-    top: 400px;
-    padding-left: 45px;
   }
   .text__price {
     margin-left: 55px;
@@ -506,6 +506,9 @@ header .arrow {
     width: 70%;
     margin-left: 115px;
     margin-top: -300px;
+  }
+  .bloc-menu .menu-4 {
+    padding-bottom: 250px;
   }
   .text__price {
     margin-left: 35px;
@@ -545,12 +548,12 @@ header .arrow {
     width: 70%;
     height: 170%;
   }
-  .menu {
+  .bloc-menu .menu {
     position: relative;
     top: -10px;
     margin-left: 160px;
   }
-  .menu-content {
+  .bloc-menu .menu-content {
     margin-top: 10px;
   }
   .text__price {
@@ -559,8 +562,5 @@ header .arrow {
   .btn-resto {
     margin-right: 80px;
     margin-bottom: 100px;
-  }
-  .menu-4 {
-    padding-bottom: 250px;
   }
 }/*# sourceMappingURL=restaurants.css.map */

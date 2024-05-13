@@ -134,11 +134,10 @@
 
 .footer-note {
     position: absolute;
-    top: 196%;
     left: 0;
     background-color: vars.$footer-color;
     width: 100%;
-    top: 206%;
+    top: 105rem;
     .logo-footer {
         margin-top: 20px;
         margin-left: 25px;
@@ -180,7 +179,7 @@
     }
 
     .footer-note {
-        top: 220%;
+        top: 117rem;
     }
 
 }
@@ -206,7 +205,7 @@
         
     }
     .footer-note {
-        top: 215%;
+        top:120rem;
         ul {
                 height: 70px;
                 display: flex;
@@ -254,6 +253,10 @@
         justify-content: space-around;
     }
 
+    }
+
+    .footer-note {
+        top: 125rem;
     }
     
 }

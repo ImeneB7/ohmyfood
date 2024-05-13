@@ -110,7 +110,7 @@ header {
     width: 100%;
     height: 85rem;
     &.bloc-note {
-        height: 175%;
+        height: 92rem;
     }
     
     .menu {
@@ -246,8 +246,6 @@ header {
         }
     
 }
-
-
     
 .btn-note {
     bottom: 20%;
@@ -279,8 +277,6 @@ header {
     }
 
     
-    
-
     .bloc-menu {
         width: 100%;
         top: 400px;
@@ -328,7 +324,7 @@ header {
                 top: 0px;
         }
             .menu-4 {
-                padding-bottom: 250px;
+                padding-bottom: 20px;
         }
     }
 
@@ -373,9 +369,6 @@ header {
 
 
 .bloc-menu {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
     padding-left: 90px;
     margin-left: 210px;
     position: absolute;
@@ -383,7 +376,10 @@ header {
     border-radius: 45px 35px 0 0;
     background-color: vars.$background-color-1;
     width: 70%;
-    height: 90rem;
+    height: 92rem;
+    &.bloc-note {
+        height: 98rem;
+    }
     .menu {
         display: flex;
         flex-direction: column;
@@ -396,7 +392,6 @@ header {
     
 }
 
-
 .text__price {
     margin-left: 46px;
 }
@@ -406,7 +401,9 @@ header {
     margin-bottom: 100px;
 }
 
-
+.btn-note {
+    bottom: 30px;
+}
 
 }
 

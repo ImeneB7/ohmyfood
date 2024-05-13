@@ -77,7 +77,7 @@ header {
     text-align: center; 
 }
 
-.btn-resto {
+.btn-resto {                                                           /*** ANIMATION BOUTON RESTO **/
     border: none;
     border-radius: 25px;
     color: white;
@@ -120,7 +120,7 @@ header {
         @include mixins.shadow;
 }
 
-    .fa-solid {
+    .fa-solid {                                                                   
         opacity: 0.8;
         &:hover {
             opacity: 1;
@@ -130,7 +130,7 @@ header {
         
     }
 
-    .icon-fonct {
+    .icon-fonct {                                                                 /*** ANIMATION ICONE FONCTIONNEMENT ***/
         justify-self: center;
         margin-right: -60px;
         font-size: 20px;
@@ -185,7 +185,7 @@ header {
         color: #008766;
     }
 
-    i {
+    i {                                                                 /*** ANIMATION HEART ***/
         position: absolute;
         margin-top: 165px;
         margin-right: 20px;
@@ -205,34 +205,10 @@ header {
         }
 
     }
-    @keyframes fadeInn {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
-
-    @keyframes fadeOutt {
-        0% {
-            opacity: 2;
-            
-        }
-        50% {
-            opacity: 1;
-        }
-        100% {
-            opacity: 0;
-        }
-    }
     &:not(.fa-solid:hover) {
         animation: fadeOut 1s backwards;
     }
     }
-
-    
-    
 
     .card {
         background-color: white;

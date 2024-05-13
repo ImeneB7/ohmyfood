@@ -373,7 +373,7 @@ header a img {
   text-align: center;
 }
 
-.btn-resto {
+.btn-resto { /*** ANIMATION BOUTON RESTO **/
   border: none;
   border-radius: 25px;
   color: white;
@@ -421,7 +421,7 @@ header a img {
   background-clip: text;
   background-color: #9356DC;
 }
-.fonct .icon-fonct {
+.fonct .icon-fonct { /*** ANIMATION ICONE FONCTIONNEMENT ***/
   justify-self: center;
   margin-right: -60px;
   font-size: 20px;
@@ -467,7 +467,7 @@ header a img {
   font-size: 14px;
   color: #008766;
 }
-.card-container i {
+.card-container i { /*** ANIMATION HEART ***/
   position: absolute;
   margin-top: 165px;
   margin-right: 20px;
@@ -485,25 +485,6 @@ header a img {
   background-clip: text;
   background-image: linear-gradient(360deg, #9356DC 0%, #FF79DA 100%);
   animation: fadeInn 1s, fadeOutt 1s 2s;
-}
-@keyframes fadeInn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes fadeOutt {
-  0% {
-    opacity: 2;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
 }
 .card-container i:not(.fa-solid:hover) {
   animation: fadeOut 1s backwards;

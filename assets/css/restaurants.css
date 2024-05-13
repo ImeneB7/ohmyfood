@@ -291,7 +291,7 @@ header .arrow {
 }
 
 .image {
-  height: 320px;
+  height: 330px;
   width: 100%;
   object-fit: contain;
 }
@@ -314,11 +314,11 @@ header .arrow {
   margin-left: -30px;
 }
 
-.heart {
+.heart { /*** ANIMATION HEART ***/
   position: absolute;
   font-size: 1.6rem;
   top: 3.2%;
-  left: 82%;
+  left: 38vw;
 }
 .heart .fa-solid {
   opacity: 0;
@@ -348,26 +348,23 @@ header .arrow {
 }
 
 .bloc-menu {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  margin-left: 0%;
-  margin-top: 0px;
   position: absolute;
-  top: 250px;
+  top: 220px;
   border-radius: 45px 35px 0 0;
   background-color: #F6F6F6;
   width: 100%;
-  height: 165%;
+  height: 85rem;
 }
 .bloc-menu.bloc-note {
   height: 175%;
 }
 .bloc-menu .menu {
+  display: flex;
+  flex-direction: column;
   position: relative;
+  top: 0px;
 }
 .bloc-menu .menu .menu-content {
-  position: relative;
   border-radius: 15px;
   background-color: #ffffff;
   width: 90%;
@@ -401,7 +398,7 @@ header .arrow {
   letter-spacing: 0.03em;
   font-weight: 300;
 }
-.bloc-menu .menu .menu-content .animation {
+.bloc-menu .menu .menu-content .animation { /*** ANIMATION VALIDATION DE PLAT ***/
   position: absolute;
   background-color: #99E2D0;
   color: white;
@@ -496,7 +493,7 @@ header .arrow {
   }
   .heart {
     top: 4%;
-    left: 270px;
+    left: 34vw;
   }
   .title h1 {
     margin-left: -40px;
@@ -531,19 +528,19 @@ header .arrow {
 }
 @media screen and (min-width: 768px) and (min-width: 1024px) { /*** DESKTOP ***/
   .heart {
-    padding-top: 0px;
-    margin-left: 10px;
+    left: 28vw;
   }
   .bloc-menu {
     width: 80%;
-    height: 185%;
+    height: 90rem;
     margin-top: 50px;
     margin-left: 100px;
   }
   .bloc-menu .menu {
-    width: 70%;
-    margin-left: 115px;
-    margin-top: -300px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 0px;
   }
   .bloc-menu .menu-4 {
     padding-bottom: 250px;
@@ -584,12 +581,13 @@ header .arrow {
     border-radius: 45px 35px 0 0;
     background-color: #F6F6F6;
     width: 70%;
-    height: 170%;
+    height: 90rem;
   }
   .bloc-menu .menu {
+    display: flex;
+    flex-direction: column;
     position: relative;
-    top: -10px;
-    margin-left: 160px;
+    top: 0px;
   }
   .bloc-menu .menu-content {
     margin-top: 10px;

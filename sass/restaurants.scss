@@ -41,7 +41,7 @@ header {
 
 
 .image {
-    height: 320px;
+    height: 330px;
     width: 100%;
     object-fit: contain; 
 }
@@ -66,11 +66,11 @@ header {
     margin-left: -30px;  
 }
 
-.heart {
+.heart {                                                                /*** ANIMATION HEART ***/
     position: absolute;
     font-size: 1.6rem;
     top: 3.2%;
-    left: 82%;
+    left: 38vw;
     
     .fa-solid  {
         opacity: 0;
@@ -103,25 +103,22 @@ header {
 
 
 .bloc-menu {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    margin-left: 0%;
-    margin-top: 0px;
     position: absolute;
-    top: 250px;
+    top: 220px;
     border-radius: 45px 35px 0 0;
     background-color: vars.$background-color-1;
     width: 100%;
-    height: 165%;
+    height: 85rem;
     &.bloc-note {
         height: 175%;
     }
     
     .menu {
+    display: flex;
+    flex-direction: column;
     position: relative;
+    top: 0px;
         .menu-content {
-        position: relative;
         border-radius: 15px;
         background-color: vars.$background-color-2;
         width: 90%;  
@@ -157,7 +154,7 @@ header {
         }
         
         
-        .animation {
+        .animation {                                                                            /*** ANIMATION VALIDATION DE PLAT ***/
             position: absolute;
             background-color: vars.$tertiary-color;
             color: white;
@@ -202,7 +199,7 @@ header {
         @include mixins.shadow
         }
 
-    .menu-content:nth-child(2) {                       /** EFFET APPARITION MENU **/
+    .menu-content:nth-child(2) {                                     /** EFFET APPARITION MENU **/
         animation: menu-list 3s ease both 0.5s;
     }
 
@@ -266,10 +263,9 @@ header {
         @include mixins.center;
     }
 
-
     .heart {
         top: 4%;
-        left: 270px;
+        left: 34vw;
     }
 
     .title h1 {
@@ -316,23 +312,23 @@ header {
 
 
     .heart   {
-        padding-top: 0px;
-        margin-left: 10px;
+        left: 28vw;
     }
 
     
     .bloc-menu {
         width: 80%;
-        height: 185%;
+        height: 90rem;
         margin-top: 50px;
         margin-left: 100px;
             .menu {
-            width: 70%;
-            margin-left: 115px;
-            margin-top: -300px;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                top: 0px;
         }
-        .menu-4 {
-            padding-bottom: 250px;
+            .menu-4 {
+                padding-bottom: 250px;
         }
     }
 
@@ -387,11 +383,12 @@ header {
     border-radius: 45px 35px 0 0;
     background-color: vars.$background-color-1;
     width: 70%;
-    height: 170%;
+    height: 90rem;
     .menu {
-    position: relative;
-    top: -10px;
-    margin-left: 160px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 0px;
     }
     .menu-content {
         margin-top: 10px;
